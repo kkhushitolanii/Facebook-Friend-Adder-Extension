@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+   <title>Add Friends</title>
+   <style>
+     body {
+       font-family: Arial, sans-serif;
+       padding: 10px;
+     }
+     #status {
+       margin-top: 10px;
+       color: green;
+     }
+     #friendCount {
+       margin-bottom: 10px; 
+     }
+     #addFriendsButton {
+       background-color: #4CAF50; 
+       color: white; 
+       border: none; 
+       padding: 8px 16px; 
+       text-align: center; 
+       text-decoration: none; 
+       display: inline-block; 
+       font-size: 14px; 
+       margin: 4px 0; 
+       cursor: pointer; 
+       border-radius: 4px; 
+     }
+     #addFriendsButton:hover {
+       background-color: #45a049; 
+     }
+   </style>
+ </head>
+ <body>
+   <h3>Add Facebook Friends</h3>
+   <p>Enter the number of friend requests to send:</p>
+   <input type="number" id="friendCount" min="1" placeholder="Number of requests">
+   <button id="addFriendsButton">Add Friends</button>
+   <p id="status"></p>
+ 
+   <script src="popup.js"></script>
+ </body>
+</html>
+ 

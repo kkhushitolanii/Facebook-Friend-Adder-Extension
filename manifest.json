@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Facebook Friend Adder",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.facebook.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/friends/suggestions"],
+      "js": ["content.js"]
+    }
+  ]
+}
